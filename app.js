@@ -71,6 +71,6 @@ app.use(function (err, req, res, next) {
 	res.send("file is incorrect");
 });
 
-server.listen(5000, () => {
+server.listen(process.env.PORT || 5000, () => {
 	console.log("Server is running ...");
 });
